@@ -1,0 +1,159 @@
+/*
+ Theme Name:   Custom Theme based on generatepress
+ Theme URI:    http://chaiwei.github.io
+ Description:  Custom Theme based on generatepress
+ Author:       Chaiwei
+ Author URI:   http://chaiwei.github.io
+ Template:     generatepress
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  generatepress-child
+*/
+
+#menu-header-sub-menu {
+    float: right;
+}
+#menu-header-sub-menu li {
+    float: left;
+    margin-right: 12px;
+    padding: 5px 10px;
+}
+.inside-header {
+    padding-top: 5px;
+}
+.site-logo { 
+    max-width: 350px;
+    float: left;
+}
+.top-bar {
+    background: #FFF;
+}
+.top-bar a, .top-bar a:visited {
+    color: #000;
+    background-color: transparent;
+}
+.home #page {
+    width: 100%;
+    max-width: none;
+}
+.white-box {
+    background: rgba(255,255,255,0.8);
+    padding: 20px;
+    margin: 20px -15px;
+}
+
+/* 
+    woocommerce
+*/
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1,
+.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+    flex: unset;
+    max-width: 100%;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    padding: 15px;
+    width: 29%;
+    background: rgba(255,255,255,0.8);
+    text-align: center;
+}
+.woocommerce .quantity .qty {
+    padding: 5px;
+}
+.woocommerce ul.products li.product .price, .woocommerce div.product p.price, .woocommerce div.product span.price {
+    font-size: 1.4em;
+}
+
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button,
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt {
+    background-color: #28a745;
+    color: #FFF;
+    font-weight: normal;
+}
+.woocommerce #respond input#submit:hover, 
+.woocommerce a.button:hover, 
+.woocommerce button.button:hover, 
+.woocommerce input.button:hover {
+    background-color: #1e7e34!important;
+    color: #FFF;
+}
+.woocommerce-page table.cart td.actions input#coupon_code {
+    width: 130px; 
+}
+.woocommerce-page .product_meta > span {
+    display: block;
+    border-top: 1px dotted #ddd;
+    padding: 5px 0;
+}
+.woocommerce-page form.woocommerce-checkout {
+    width: 100%;
+    -js-display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+.woocommerce-page form.woocommerce-checkout .col-1,
+.woocommerce-page form.woocommerce-checkout .col-2 {
+    width: 100%;
+}
+.woocommerce-page form.checkout h3 {
+    font-size: 1.1em;
+    overflow: hidden;
+    padding-top: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.woocommerce-page form.checkout #ship-to-different-address label {
+    text-transform: none;
+    font-weight: normal;
+}
+.woocommerce form.checkout .form-row,
+.woocommerce form.checkout .form-row label,
+.woocommerce-input-wrapper {
+    width: 100%;
+}
+.woocommerce form.checkout .form-row-first,
+.woocommerce form.checkout .form-row-last {
+    width: 50%;
+}
+.woocommerce-checkout-review-order-table tr td:last-child {
+    text-align: right;
+}
+.woocommerce-NoticeGroup {
+    width: 100%;
+}
+
+/*
+ 
+*/
+@media (min-width: 769px) {
+ 
+    .main-navigation, .main-navigation ul ul {
+        background: transparent;
+    }
+    
+    .main-navigation .main-nav ul li a, 
+    .main-navigation .main-nav ul li[class*="current-menu-"] > a {
+        color: #000;
+        background-color: transparent;
+    }
+
+    .top-bar li:hover > a,
+    .main-navigation .main-nav ul li:hover > a, 
+    .main-navigation .main-nav ul li:focus > a, 
+    .main-navigation .main-nav ul li.sfHover > a,
+    .main-navigation .main-nav ul li[class*="current-menu-"] > a:hover, 
+    .main-navigation .main-nav ul li[class*="current-menu-"].sfHover > a {
+        color: #afca09;
+        background-color: transparent;
+    }
+
+}
